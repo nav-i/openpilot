@@ -116,7 +116,7 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.6], [0.15]]
       ret.lateralTuning.pid.kf = 0.00007818594
 
-    elif candidate in [CAR.CHR, CAR.CHRH]:
+    elif candidate in [CAR.CHR_TSS2p5, CAR.CHR, CAR.CHRH]:
       stop_and_go = True
       ret.safetyParam = 73
       ret.wheelbase = 2.63906
